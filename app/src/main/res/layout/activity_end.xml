@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#2196F3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Top 5 Scores"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/topScoresList"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/totalPlayersLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Players: 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/unsernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border"
+        android:hint="Enter Player Username"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/getPlayerScoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Get Player Score" />
+
+    <TextView
+        android:id="@+id/averageScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Score: 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/highestScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highest Score: 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="Go Back To Registration Page"
+        android:textColor="@color/white" />
+
+</LinearLayout>
